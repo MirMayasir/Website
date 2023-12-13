@@ -1,5 +1,6 @@
 #!/bin/bash
-isExistApp = `node app.js`
+isExistApp = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then
-    ^C        
+    service httpd stop        
 fi
+
