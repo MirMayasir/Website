@@ -1,5 +1,0 @@
-#!/bin/bash
-isExistApp = `node app.js`
-if [[ -n  $isExistApp ]]; then
-    ^C        
-fi
