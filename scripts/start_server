@@ -1,4 +1,4 @@
-cd /var/www/html/myapp
+cd /var/www/html
 # install
 npm install
 # Start the Node.js application (replace app.js with the entry point of your application)
