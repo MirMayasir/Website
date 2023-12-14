@@ -1,4 +1,4 @@
-NODE_PID = $(pgrep -f "nodemon app.js")
+NODE_PID = $(pgrep -f "node app.js")
 if [ -n "$NODE_PID" ]; then
   kill -SIGTERM "$NODE_PID"
   wait "$NODE_PID"
