@@ -1,5 +1,5 @@
 NODE_PID = $(pgrep -f "sudo nodemon app.js")
 if [ -n "$NODE_PID" ]; then
-  kill -SIGTERM "$NODE_PID"
+  sudo kill -SIGTERM "$NODE_PID"
   wait "$NODE_PID"
 fi
