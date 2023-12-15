@@ -1,5 +1,5 @@
-NODE_PID = $(pgrep -f "sudo nodemon app.js")
-if [ -n "$NODE_PID" ]; then
-  sudo kill -SIGTERM "$NODE_PID"
-  wait "$NODE_PID"
+#!/bin/bash
+isExistApp=$(pgrep node)
+if [[ -n $isExistApp ]]; then
+    kill -9 $isExistApp
 fi

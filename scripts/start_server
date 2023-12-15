@@ -1,5 +1,4 @@
-cd /var/www/html
-# install
-sudo npm install
-# Start the Node.js application (replace app.js with the entry point of your application)
-sudo nodemon app.js
+#!/bin/bash
+cd /var/www/html/
+npm install
+node app.js
