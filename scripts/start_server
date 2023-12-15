@@ -1,9 +1,5 @@
 #!/bin/bash
 cd /var/www/html/
 npm install
-<<<<<<< HEAD
 sleep 10
-node app.js
-=======
 nodemon app.js
->>>>>>> 50169204016bb416794fbc026dc5d8c560f5d2c1
