@@ -1,5 +1,5 @@
 #!/bin/bash
-isExistApp=$(pgrep nodemon)
+isExistApp=$(pgrep node)
 if [[ -n $isExistApp ]]; then
     echo "Stopping Node.js process with PID $isExistApp..."
     kill -15 $isExistApp
