@@ -67,7 +67,11 @@ app.engine('html', require('ejs').renderFile);
 app.get('/', (req, res) => {
     res.render('home.html');
 });
-
+process.on('SIGTERM', () => {
+  console.log('Received SIGTERM. Closing server gracefully.');
+  // Perform any cleanup or shutdown tasks here
+  process.exit(0);
+});
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
