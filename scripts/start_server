@@ -1,4 +1,5 @@
 #!/bin/bash
 cd /var/www/html/
 npm install
+sleep 10
 node app.js
