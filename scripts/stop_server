@@ -2,14 +2,10 @@
 isExistApp=$(pgrep node)
 if [[ -n $isExistApp ]]; then
     echo "Stopping Node.js process with PID $isExistApp..."
-    # Attempt a graceful shutdown first
     kill -15 $isExistApp
-    # Wait for a few seconds to allow the process to gracefully exit
     sleep 5
-    # Check if the process is still running
     isExistApp=$(pgrep node)
     if [[ -n $isExistApp ]]; then
-        # If the process is still running, force termination
         echo "Node.js process did not respond to SIGTERM. Forcing termination..."
         kill -9 $isExistApp
     else
