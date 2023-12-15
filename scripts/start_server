@@ -1,5 +1,4 @@
 #!/bin/bash
 cd /var/www/html/
 npm install
-sleep 10
 npx nodemon app.js
