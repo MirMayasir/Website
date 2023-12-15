@@ -2,4 +2,4 @@
 cd /var/www/html/
 npm install
 sleep 10
-nodemon app.js
+npx nodemon app.js
